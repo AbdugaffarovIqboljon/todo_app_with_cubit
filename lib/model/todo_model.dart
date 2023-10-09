@@ -23,7 +23,7 @@ class Todo {
         "id": id,
         "title": title,
         "description": description,
-        "isCompleted": isCompleted ? 1: 0,
+        "isCompleted": isCompleted ? 1 : 0,
       };
 
   @override

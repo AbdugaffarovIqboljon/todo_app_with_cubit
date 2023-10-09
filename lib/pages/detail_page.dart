@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_bloc/cubit/detail_cubit/detail_cubit.dart';
 import 'package:learn_bloc/main.dart';
@@ -24,7 +25,7 @@ class DetailPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Detail"),
+        title: const Text("add_task").tr(),
         actions: [
           IconButton(
             onPressed: () {
@@ -43,12 +44,12 @@ class DetailPage extends StatelessWidget {
               children: [
                 TextField(
                   controller: titleCtrl,
-                  decoration: const InputDecoration(hintText: "Title"),
+                  decoration: InputDecoration(hintText: "title".tr()),
                 ),
                 const SizedBox(height: 15),
                 TextField(
                   controller: descCtrl,
-                  decoration: const InputDecoration(hintText: "Description"),
+                  decoration: InputDecoration(hintText: "description".tr()),
                 ),
                 const SizedBox(height: 15),
 
